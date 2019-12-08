@@ -9,20 +9,13 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "MarkdownKit_iOS",
-            targets: ["MarkdownKit_iOS"]
-        ),
-        .library(
-            name: "MarkdownKit_macOS",
-            targets: ["MarkdownKit_macOS"]
-        ),
+            name: "MarkdownKit",
+            targets: ["MarkdownKit"]
+        )
     ],
     targets: [
         .target(
-            name: "MarkdownKit_iOS", 
-            path: ["MarkdownKit/Sources/Common", "MarkdownKit/Sources/UIKit"]),
-        .target(
-            name: "MarkdownKit_macOS", 
-            path: ["MarkdownKit/Sources/Common", "MarkdownKit/Sources/AppKit"]),
+            name: "MarkdownKit", 
+            path: "MarkdownKit/Sources")
     ]
 )
