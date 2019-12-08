@@ -4,8 +4,7 @@ import PackageDescription
 let package = Package(
     name: "MarkdownKit",
     platforms: [
-        .iOS(.v9),
-        .macOS(.v10_10)
+        .iOS(.v9)
     ],
     products: [
         .library(
